@@ -106,6 +106,7 @@ export default {
   min-height: 400px;
 }
 .el-menu {
+  border-right: 0;
   height: 100%;
   h4 {
     color: white;

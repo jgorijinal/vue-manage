@@ -9,7 +9,11 @@ import {
   Submenu,
   MenuItem,
   MenuItemGroup,
-  Icon
+  Icon,
+  Avatar,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
 } from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 
@@ -24,7 +28,11 @@ const components = [
   Submenu,
   MenuItem,
   MenuItemGroup,
-  Icon
+  Icon,
+  Avatar,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
 ];
 
 export default function registerElement(Vue) {

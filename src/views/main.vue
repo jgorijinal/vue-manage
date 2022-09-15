@@ -5,7 +5,7 @@
     </el-aside>
     <el-container>
       <el-header>
-        <el-button @click="toggleAside">展开/收起</el-button>
+        <common-header @btn-click="toggleAside"/>
       </el-header>
       <el-main>
         <router-view></router-view>
@@ -16,9 +16,11 @@
 
 <script>
 import CommonAside from '@/components/CommonAside.vue';
+import CommonHeader from '@/components/CommonHeader.vue';
 export default {
   components: {
-    CommonAside
+    CommonAside,
+    CommonHeader
   },
   methods: {
     toggleAside() {
@@ -30,6 +32,6 @@ export default {
 
 <style lang="less" scoped>
 .el-header {
-  background-color:grey
+  background-color:#545c64;
 }
 </style>
