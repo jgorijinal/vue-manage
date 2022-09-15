@@ -1,11 +1,11 @@
 <template>
   <el-container style="height: 100%">
     <el-aside width="auto">
-      <common-aside ref="asideRef"></common-aside>
+      <common-aside></common-aside>
     </el-aside>
     <el-container>
       <el-header>
-        <common-header @btn-click="toggleAside"/>
+        <common-header/>
       </el-header>
       <el-main>
         <router-view></router-view>
@@ -23,9 +23,9 @@ export default {
     CommonHeader
   },
   methods: {
-    toggleAside() {
-      this.$refs.asideRef.isCollapse = !this.$refs.asideRef.isCollapse
-    }
+    // toggleAside() {
+    //   this.$refs.asideRef.isCollapse = !this.$refs.asideRef.isCollapse
+    // }
   }
 }
 </script>

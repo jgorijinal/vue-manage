@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="l-content">
-      <el-button icon="el-icon-menu" size="mini" type="warning" @click="$emit('btn-click')"></el-button>
+      <el-button icon="el-icon-menu" size="mini" type="warning" @click="toggleAside"></el-button>
       <h3 style="color: white">首页</h3>
     </div>
     <div class="r-content">
@@ -27,6 +27,9 @@ export default {
     };
   },
   methods: {
+    toggleAside() {
+      this.$store.commit('changeIsCollapse')
+    }
   }
 };
 </script>

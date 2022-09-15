@@ -31,7 +31,6 @@
 export default {
   data() {
     return {
-      isCollapse: false,
       menus: [
         {
           path: "/",
@@ -78,12 +77,15 @@ export default {
     };
   },
   computed: {
+    isCollapse() {
+      return this.$store.state.tab.isCollapse
+    },
     noChildrenMenus() { // 一级菜单
       return this.menus.filter(item => !item.children)
     },
     hasChildrenMenus() {  // 二级菜单
       return this.menus.filter(item => item.children)
-    }
+    },
   },
   methods: {
     handleClickMenu(item) { // 点击 菜单
