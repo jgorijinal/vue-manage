@@ -3,6 +3,7 @@ import App from './App.vue'
 import registerElement from './global/register-element';
 import router from '@/router'
 import '@/assets/css/index.css'
+import '@/assets/less/index.less'
 
 registerElement(Vue) // 注册element-ui
 Vue.config.productionTip = false
